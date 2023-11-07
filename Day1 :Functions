@@ -10,3 +10,9 @@ function factorial(n){
     return fac;
 }
 
+/*
+ * Create the function factorial here(Approach-2)
+ */
+function factorial(n){
+    return n ? n * factorial(n - 1) : 1;
+}
