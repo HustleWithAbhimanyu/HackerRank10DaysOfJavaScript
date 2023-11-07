@@ -1,0 +1,11 @@
+/*
+ * Create the function factorial here
+ */
+var fac=1;
+function factorial(n){
+    for(let i=1;i<=n;i++){
+        
+        fac=fac*i;
+    }
+    return fac;
+}
