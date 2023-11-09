@@ -1,0 +1,16 @@
+/*
+ * Complete the vowelsAndConsonants function.
+ * Print your output using 'console.log()'.
+ */
+function vowelsAndConsonants(s) {
+    const vowels = ["a","e","i","o","u"];
+    const str = s.split("");
+    const vowelsArr = [];
+    const consonantsArr = [];
+    for(let i = 0; i < str.length; i++)
+        vowels.includes(str[i]) ? vowelsArr.push(str[i]) : consonantsArr.push(str[i]);
+    for(let i = 0; i < vowelsArr.length; i++)
+        console.log(vowelsArr[i]);
+    for(let i = 0; i < consonantsArr.length; i++)
+        console.log(consonantsArr[i]);
+}
